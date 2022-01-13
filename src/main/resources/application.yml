@@ -29,6 +29,7 @@ spring:
               args:
                 name: INFORMATION-SERVICE
                 fallbackuri: forward:/info-service-fallback
+            - name: CustomFilter
         - id: NEWSFEED-SERVICE
           uri: lb://NEWSFEED-SERVICE
           predicates: 
